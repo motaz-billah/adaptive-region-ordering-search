@@ -8,7 +8,7 @@ The project investigates whether observing where successful queries occur can im
 
 ## Team
 
-- **Project Lead &  Developer:** Motaz Billah Jamal Abu Al-Joloud
+- **Project Lead &  Developer:** Mutaz Billah Jamal Abu Al-Joloud
 - **Contributors &  Developer:** Ali Abu Najm; Ahmad Radwan
 
 See [`AUTHORS.md`](AUTHORS.md).
