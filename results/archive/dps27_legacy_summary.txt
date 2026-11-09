@@ -1,0 +1,369 @@
+==============================================
+       DPS27 FROZEN vs LINEAR SEARCH
+==============================================
+Array size: 20000
+Training queries: 300
+Test queries: 40
+Repeats: 7
+Dataset types: 4
+Training zones: 4
+Test scenarios: 7
+
+
+==============================================
+DATASET: Random Unique
+==============================================
+
+----------------------------------------------
+Training zone: 1
+Frozen order: [1, 2, 3, 4]
+Training time: 25.349 ms
+----------------------------------------------
+Zone 1                 | Linear median:     3.484 ms | DPS median:     2.974 ms | Speedup:   1.171x
+                       | Linear P95:    162.20 us | DPS P95:    164.30 us | Comparisons:   1.000x
+Zone 2                 | Linear median:    10.215 ms | DPS median:     9.928 ms | Speedup:   1.029x
+                       | Linear P95:    383.00 us | DPS P95:    404.80 us | Comparisons:   1.000x
+Zone 3                 | Linear median:    17.317 ms | DPS median:    16.120 ms | Speedup:   1.074x
+                       | Linear P95:    650.10 us | DPS P95:    497.70 us | Comparisons:   1.000x
+Zone 4                 | Linear median:    24.540 ms | DPS median:    22.096 ms | Speedup:   1.111x
+                       | Linear P95:    762.70 us | DPS P95:    676.10 us | Comparisons:   1.000x
+Uniform                | Linear median:    12.958 ms | DPS median:    11.349 ms | Speedup:   1.142x
+                       | Linear P95:    687.10 us | DPS P95:    632.40 us | Comparisons:   1.000x
+Mixed 70-10-10-10      | Linear median:    19.660 ms | DPS median:    18.483 ms | Speedup:   1.064x
+                       | Linear P95:    703.60 us | DPS P95:    648.40 us | Comparisons:   1.000x
+Not Found              | Linear median:    24.728 ms | DPS median:    22.918 ms | Speedup:   1.079x
+                       | Linear P95:    677.60 us | DPS P95:    606.00 us | Comparisons:   1.000x
+
+----------------------------------------------
+Training zone: 2
+Frozen order: [2, 1, 3, 4]
+Training time: 73.242 ms
+----------------------------------------------
+Zone 1                 | Linear median:     3.315 ms | DPS median:     9.517 ms | Speedup:   0.348x
+                       | Linear P95:    153.70 us | DPS P95:    319.80 us | Comparisons:   0.338x
+Zone 2                 | Linear median:    10.769 ms | DPS median:     4.096 ms | Speedup:   2.630x
+                       | Linear P95:    368.20 us | DPS P95:    184.20 us | Comparisons:   2.653x
+Zone 3                 | Linear median:    16.526 ms | DPS median:    15.114 ms | Speedup:   1.093x
+                       | Linear P95:    504.50 us | DPS P95:    470.40 us | Comparisons:   1.000x
+Zone 4                 | Linear median:    23.789 ms | DPS median:    22.687 ms | Speedup:   1.049x
+                       | Linear P95:    861.40 us | DPS P95:    814.60 us | Comparisons:   1.000x
+Uniform                | Linear median:    14.649 ms | DPS median:    14.134 ms | Speedup:   1.036x
+                       | Linear P95:    680.90 us | DPS P95:    648.60 us | Comparisons:   0.966x
+Mixed 70-10-10-10      | Linear median:    22.362 ms | DPS median:    17.722 ms | Speedup:   1.262x
+                       | Linear P95:   1071.60 us | DPS P95:    655.80 us | Comparisons:   1.035x
+Not Found              | Linear median:    26.888 ms | DPS median:    23.351 ms | Speedup:   1.151x
+                       | Linear P95:    862.70 us | DPS P95:    712.20 us | Comparisons:   1.000x
+
+----------------------------------------------
+Training zone: 3
+Frozen order: [3, 1, 2, 4]
+Training time: 129.448 ms
+----------------------------------------------
+Zone 1                 | Linear median:     3.086 ms | DPS median:     9.542 ms | Speedup:   0.323x
+                       | Linear P95:    209.20 us | DPS P95:    413.00 us | Comparisons:   0.301x
+Zone 2                 | Linear median:    10.835 ms | DPS median:    17.061 ms | Speedup:   0.635x
+                       | Linear P95:    456.00 us | DPS P95:    739.60 us | Comparisons:   0.602x
+Zone 3                 | Linear median:    17.813 ms | DPS median:     3.331 ms | Speedup:   5.348x
+                       | Linear P95:    635.90 us | DPS P95:    142.10 us | Comparisons:   4.734x
+Zone 4                 | Linear median:    24.400 ms | DPS median:    22.870 ms | Speedup:   1.067x
+                       | Linear P95:    861.60 us | DPS P95:    841.40 us | Comparisons:   1.000x
+Uniform                | Linear median:    12.056 ms | DPS median:    12.798 ms | Speedup:   0.942x
+                       | Linear P95:    677.60 us | DPS P95:    633.50 us | Comparisons:   0.883x
+Mixed 70-10-10-10      | Linear median:    20.727 ms | DPS median:    17.423 ms | Speedup:   1.190x
+                       | Linear P95:    820.60 us | DPS P95:    662.50 us | Comparisons:   1.071x
+Not Found              | Linear median:    25.713 ms | DPS median:    24.674 ms | Speedup:   1.042x
+                       | Linear P95:    862.00 us | DPS P95:    951.40 us | Comparisons:   1.000x
+
+----------------------------------------------
+Training zone: 4
+Frozen order: [4, 1, 2, 3]
+Training time: 185.598 ms
+----------------------------------------------
+Zone 1                 | Linear median:     3.151 ms | DPS median:     9.652 ms | Speedup:   0.326x
+                       | Linear P95:    162.00 us | DPS P95:    405.80 us | Comparisons:   0.317x
+Zone 2                 | Linear median:    10.103 ms | DPS median:    17.853 ms | Speedup:   0.566x
+                       | Linear P95:    439.10 us | DPS P95:    628.40 us | Comparisons:   0.603x
+Zone 3                 | Linear median:    17.111 ms | DPS median:    22.382 ms | Speedup:   0.764x
+                       | Linear P95:    525.10 us | DPS P95:    665.90 us | Comparisons:   0.716x
+Zone 4                 | Linear median:    24.214 ms | DPS median:     3.107 ms | Speedup:   7.792x
+                       | Linear P95:    803.10 us | DPS P95:    153.30 us | Comparisons:   7.223x
+Uniform                | Linear median:    14.838 ms | DPS median:    11.569 ms | Speedup:   1.283x
+                       | Linear P95:    726.30 us | DPS P95:    598.60 us | Comparisons:   1.165x
+Mixed 70-10-10-10      | Linear median:    19.532 ms | DPS median:     7.975 ms | Speedup:   2.449x
+                       | Linear P95:    774.70 us | DPS P95:    615.60 us | Comparisons:   2.480x
+Not Found              | Linear median:    25.205 ms | DPS median:    23.020 ms | Speedup:   1.095x
+                       | Linear P95:    770.00 us | DPS P95:    623.60 us | Comparisons:   1.000x
+
+
+==============================================
+DATASET: Sorted
+==============================================
+
+----------------------------------------------
+Training zone: 1
+Frozen order: [1, 2, 3, 4]
+Training time: 23.233 ms
+----------------------------------------------
+Zone 1                 | Linear median:     3.639 ms | DPS median:     3.338 ms | Speedup:   1.090x
+                       | Linear P95:    165.40 us | DPS P95:    145.80 us | Comparisons:   1.000x
+Zone 2                 | Linear median:    12.296 ms | DPS median:    10.050 ms | Speedup:   1.224x
+                       | Linear P95:    445.00 us | DPS P95:    407.30 us | Comparisons:   1.000x
+Zone 3                 | Linear median:    15.356 ms | DPS median:    14.275 ms | Speedup:   1.076x
+                       | Linear P95:    586.80 us | DPS P95:    521.00 us | Comparisons:   1.000x
+Zone 4                 | Linear median:    21.741 ms | DPS median:    20.247 ms | Speedup:   1.074x
+                       | Linear P95:    914.50 us | DPS P95:    577.20 us | Comparisons:   1.000x
+Uniform                | Linear median:    12.244 ms | DPS median:    11.521 ms | Speedup:   1.063x
+                       | Linear P95:    571.50 us | DPS P95:    541.90 us | Comparisons:   1.000x
+Mixed 70-10-10-10      | Linear median:    18.031 ms | DPS median:    17.212 ms | Speedup:   1.048x
+                       | Linear P95:    621.10 us | DPS P95:    591.00 us | Comparisons:   1.000x
+Not Found              | Linear median:    24.627 ms | DPS median:    23.202 ms | Speedup:   1.061x
+                       | Linear P95:    723.80 us | DPS P95:    627.80 us | Comparisons:   1.000x
+
+----------------------------------------------
+Training zone: 2
+Frozen order: [2, 1, 3, 4]
+Training time: 66.953 ms
+----------------------------------------------
+Zone 1                 | Linear median:     2.740 ms | DPS median:     8.585 ms | Speedup:   0.319x
+                       | Linear P95:    148.30 us | DPS P95:    332.30 us | Comparisons:   0.312x
+Zone 2                 | Linear median:     9.407 ms | DPS median:     2.819 ms | Speedup:   3.336x
+                       | Linear P95:    338.10 us | DPS P95:    135.80 us | Comparisons:   3.084x
+Zone 3                 | Linear median:    15.501 ms | DPS median:    14.254 ms | Speedup:   1.088x
+                       | Linear P95:    481.60 us | DPS P95:    431.10 us | Comparisons:   1.000x
+Zone 4                 | Linear median:    21.666 ms | DPS median:    20.259 ms | Speedup:   1.069x
+                       | Linear P95:    630.20 us | DPS P95:    601.60 us | Comparisons:   1.000x
+Uniform                | Linear median:    12.279 ms | DPS median:    11.488 ms | Speedup:   1.069x
+                       | Linear P95:    587.00 us | DPS P95:    549.60 us | Comparisons:   1.000x
+Mixed 70-10-10-10      | Linear median:    17.141 ms | DPS median:    14.772 ms | Speedup:   1.160x
+                       | Linear P95:    631.50 us | DPS P95:    558.50 us | Comparisons:   1.048x
+Not Found              | Linear median:    24.643 ms | DPS median:    23.350 ms | Speedup:   1.055x
+                       | Linear P95:    680.70 us | DPS P95:    692.10 us | Comparisons:   1.000x
+
+----------------------------------------------
+Training zone: 3
+Frozen order: [3, 1, 2, 4]
+Training time: 113.251 ms
+----------------------------------------------
+Zone 1                 | Linear median:     3.222 ms | DPS median:     8.745 ms | Speedup:   0.368x
+                       | Linear P95:    139.50 us | DPS P95:    297.70 us | Comparisons:   0.347x
+Zone 2                 | Linear median:     8.941 ms | DPS median:    13.895 ms | Speedup:   0.643x
+                       | Linear P95:    304.60 us | DPS P95:    434.10 us | Comparisons:   0.591x
+Zone 3                 | Linear median:    15.281 ms | DPS median:     2.466 ms | Speedup:   6.198x
+                       | Linear P95:    482.70 us | DPS P95:    127.90 us | Comparisons:   5.535x
+Zone 4                 | Linear median:    21.514 ms | DPS median:    20.030 ms | Speedup:   1.074x
+                       | Linear P95:    621.00 us | DPS P95:    574.80 us | Comparisons:   1.000x
+Uniform                | Linear median:    12.721 ms | DPS median:    12.651 ms | Speedup:   1.005x
+                       | Linear P95:    582.60 us | DPS P95:    550.10 us | Comparisons:   0.932x
+Mixed 70-10-10-10      | Linear median:    17.231 ms | DPS median:    16.812 ms | Speedup:   1.025x
+                       | Linear P95:    616.50 us | DPS P95:    585.50 us | Comparisons:   0.965x
+Not Found              | Linear median:    24.788 ms | DPS median:    22.882 ms | Speedup:   1.083x
+                       | Linear P95:    762.20 us | DPS P95:    608.70 us | Comparisons:   1.000x
+
+----------------------------------------------
+Training zone: 4
+Frozen order: [4, 1, 2, 3]
+Training time: 174.527 ms
+----------------------------------------------
+Zone 1                 | Linear median:     2.337 ms | DPS median:     7.909 ms | Speedup:   0.296x
+                       | Linear P95:    133.70 us | DPS P95:    278.20 us | Comparisons:   0.279x
+Zone 2                 | Linear median:     9.169 ms | DPS median:    14.365 ms | Speedup:   0.638x
+                       | Linear P95:    292.10 us | DPS P95:    464.30 us | Comparisons:   0.601x
+Zone 3                 | Linear median:    15.770 ms | DPS median:    20.789 ms | Speedup:   0.759x
+                       | Linear P95:    459.50 us | DPS P95:    700.00 us | Comparisons:   0.719x
+Zone 4                 | Linear median:    20.734 ms | DPS median:     2.182 ms | Speedup:   9.503x
+                       | Linear P95:    609.90 us | DPS P95:    123.60 us | Comparisons:   8.715x
+Uniform                | Linear median:    10.988 ms | DPS median:    11.694 ms | Speedup:   0.940x
+                       | Linear P95:    578.30 us | DPS P95:    560.20 us | Comparisons:   0.853x
+Mixed 70-10-10-10      | Linear median:    18.460 ms | DPS median:     5.828 ms | Speedup:   3.167x
+                       | Linear P95:    777.10 us | DPS P95:    450.90 us | Comparisons:   2.825x
+Not Found              | Linear median:    24.632 ms | DPS median:    23.049 ms | Speedup:   1.069x
+                       | Linear P95:    940.20 us | DPS P95:    656.30 us | Comparisons:   1.000x
+
+
+==============================================
+DATASET: Reverse Sorted
+==============================================
+
+----------------------------------------------
+Training zone: 1
+Frozen order: [1, 2, 3, 4]
+Training time: 28.396 ms
+----------------------------------------------
+Zone 1                 | Linear median:     3.364 ms | DPS median:     3.017 ms | Speedup:   1.115x
+                       | Linear P95:    177.20 us | DPS P95:    142.00 us | Comparisons:   1.000x
+Zone 2                 | Linear median:     9.317 ms | DPS median:     8.641 ms | Speedup:   1.078x
+                       | Linear P95:    300.00 us | DPS P95:    281.20 us | Comparisons:   1.000x
+Zone 3                 | Linear median:    15.575 ms | DPS median:    14.348 ms | Speedup:   1.085x
+                       | Linear P95:    461.50 us | DPS P95:    483.90 us | Comparisons:   1.000x
+Zone 4                 | Linear median:    21.740 ms | DPS median:    19.887 ms | Speedup:   1.093x
+                       | Linear P95:    656.90 us | DPS P95:    563.00 us | Comparisons:   1.000x
+Uniform                | Linear median:    12.099 ms | DPS median:    11.104 ms | Speedup:   1.090x
+                       | Linear P95:    519.00 us | DPS P95:    523.40 us | Comparisons:   1.000x
+Mixed 70-10-10-10      | Linear median:    19.610 ms | DPS median:    18.093 ms | Speedup:   1.084x
+                       | Linear P95:    628.80 us | DPS P95:    593.60 us | Comparisons:   1.000x
+Not Found              | Linear median:    24.504 ms | DPS median:    22.756 ms | Speedup:   1.077x
+                       | Linear P95:    658.10 us | DPS P95:    604.00 us | Comparisons:   1.000x
+
+----------------------------------------------
+Training zone: 2
+Frozen order: [2, 1, 3, 4]
+Training time: 67.001 ms
+----------------------------------------------
+Zone 1                 | Linear median:     2.870 ms | DPS median:     8.389 ms | Speedup:   0.342x
+                       | Linear P95:    135.90 us | DPS P95:    281.30 us | Comparisons:   0.324x
+Zone 2                 | Linear median:     9.468 ms | DPS median:     3.036 ms | Speedup:   3.118x
+                       | Linear P95:    316.00 us | DPS P95:    139.90 us | Comparisons:   2.856x
+Zone 3                 | Linear median:    15.309 ms | DPS median:    14.163 ms | Speedup:   1.081x
+                       | Linear P95:    494.60 us | DPS P95:    419.50 us | Comparisons:   1.000x
+Zone 4                 | Linear median:    21.334 ms | DPS median:    20.190 ms | Speedup:   1.057x
+                       | Linear P95:    604.50 us | DPS P95:    687.80 us | Comparisons:   1.000x
+Uniform                | Linear median:    10.961 ms | DPS median:    10.339 ms | Speedup:   1.060x
+                       | Linear P95:    563.30 us | DPS P95:    524.00 us | Comparisons:   0.986x
+Mixed 70-10-10-10      | Linear median:    17.296 ms | DPS median:    16.738 ms | Speedup:   1.033x
+                       | Linear P95:    607.80 us | DPS P95:    559.10 us | Comparisons:   0.974x
+Not Found              | Linear median:    24.655 ms | DPS median:    22.814 ms | Speedup:   1.081x
+                       | Linear P95:    703.50 us | DPS P95:    618.40 us | Comparisons:   1.000x
+
+----------------------------------------------
+Training zone: 3
+Frozen order: [3, 1, 2, 4]
+Training time: 110.329 ms
+----------------------------------------------
+Zone 1                 | Linear median:     3.017 ms | DPS median:     8.534 ms | Speedup:   0.354x
+                       | Linear P95:    146.90 us | DPS P95:    283.20 us | Comparisons:   0.335x
+Zone 2                 | Linear median:     9.060 ms | DPS median:    14.197 ms | Speedup:   0.638x
+                       | Linear P95:    296.10 us | DPS P95:    417.40 us | Comparisons:   0.597x
+Zone 3                 | Linear median:    15.627 ms | DPS median:     3.057 ms | Speedup:   5.112x
+                       | Linear P95:    476.60 us | DPS P95:    138.40 us | Comparisons:   4.679x
+Zone 4                 | Linear median:    21.602 ms | DPS median:    20.127 ms | Speedup:   1.073x
+                       | Linear P95:    610.70 us | DPS P95:    595.20 us | Comparisons:   1.000x
+Uniform                | Linear median:    12.569 ms | DPS median:    10.873 ms | Speedup:   1.156x
+                       | Linear P95:    589.10 us | DPS P95:    561.90 us | Comparisons:   1.107x
+Mixed 70-10-10-10      | Linear median:    17.335 ms | DPS median:    14.488 ms | Speedup:   1.197x
+                       | Linear P95:    625.50 us | DPS P95:    573.30 us | Comparisons:   1.099x
+Not Found              | Linear median:    24.619 ms | DPS median:    23.213 ms | Speedup:   1.061x
+                       | Linear P95:    678.30 us | DPS P95:    622.70 us | Comparisons:   1.000x
+
+----------------------------------------------
+Training zone: 4
+Frozen order: [4, 1, 2, 3]
+Training time: 159.487 ms
+----------------------------------------------
+Zone 1                 | Linear median:     3.118 ms | DPS median:     8.630 ms | Speedup:   0.361x
+                       | Linear P95:    144.40 us | DPS P95:    314.60 us | Comparisons:   0.336x
+Zone 2                 | Linear median:     9.175 ms | DPS median:    14.185 ms | Speedup:   0.647x
+                       | Linear P95:    302.00 us | DPS P95:    494.00 us | Comparisons:   0.598x
+Zone 3                 | Linear median:    14.877 ms | DPS median:    19.601 ms | Speedup:   0.759x
+                       | Linear P95:    452.40 us | DPS P95:    583.70 us | Comparisons:   0.709x
+Zone 4                 | Linear median:    21.448 ms | DPS median:     2.634 ms | Speedup:   8.143x
+                       | Linear P95:    607.20 us | DPS P95:    129.50 us | Comparisons:   7.348x
+Uniform                | Linear median:    11.357 ms | DPS median:    11.591 ms | Speedup:   0.980x
+                       | Linear P95:    590.40 us | DPS P95:    553.90 us | Comparisons:   0.902x
+Mixed 70-10-10-10      | Linear median:    18.046 ms | DPS median:     5.659 ms | Speedup:   3.189x
+                       | Linear P95:    644.00 us | DPS P95:    453.30 us | Comparisons:   2.918x
+Not Found              | Linear median:    24.362 ms | DPS median:    22.965 ms | Speedup:   1.061x
+                       | Linear P95:    643.90 us | DPS P95:    697.00 us | Comparisons:   1.000x
+
+
+==============================================
+DATASET: Clustered Duplicates
+==============================================
+
+----------------------------------------------
+Training zone: 1
+Frozen order: [1, 2, 3, 4]
+Training time: 8.957 ms
+----------------------------------------------
+Zone 1                 | Linear median:     1.273 ms | DPS median:     1.029 ms | Speedup:   1.237x
+                       | Linear P95:    112.30 us | DPS P95:     76.10 us | Comparisons:   1.000x
+Zone 2                 | Linear median:     7.928 ms | DPS median:     7.269 ms | Speedup:   1.091x
+                       | Linear P95:    241.30 us | DPS P95:    230.70 us | Comparisons:   1.000x
+Zone 3                 | Linear median:    13.825 ms | DPS median:    12.978 ms | Speedup:   1.065x
+                       | Linear P95:    437.90 us | DPS P95:    397.60 us | Comparisons:   1.000x
+Zone 4                 | Linear median:    20.336 ms | DPS median:    18.676 ms | Speedup:   1.089x
+                       | Linear P95:    581.80 us | DPS P95:    519.60 us | Comparisons:   1.000x
+Uniform                | Linear median:    11.413 ms | DPS median:    10.470 ms | Speedup:   1.090x
+                       | Linear P95:    519.50 us | DPS P95:    490.10 us | Comparisons:   1.000x
+Mixed 70-10-10-10      | Linear median:    15.847 ms | DPS median:    14.597 ms | Speedup:   1.086x
+                       | Linear P95:    558.00 us | DPS P95:    518.00 us | Comparisons:   1.000x
+Not Found              | Linear median:    25.130 ms | DPS median:    24.089 ms | Speedup:   1.043x
+                       | Linear P95:    666.40 us | DPS P95:    699.90 us | Comparisons:   1.000x
+
+----------------------------------------------
+Training zone: 2
+Frozen order: [2, 1, 3, 4]
+Training time: 57.139 ms
+----------------------------------------------
+Zone 1                 | Linear median:     1.224 ms | DPS median:     6.826 ms | Speedup:   0.179x
+                       | Linear P95:     88.00 us | DPS P95:    225.40 us | Comparisons:   0.149x
+Zone 2                 | Linear median:     7.665 ms | DPS median:     0.797 ms | Speedup:   9.620x
+                       | Linear P95:    281.40 us | DPS P95:     71.50 us | Comparisons:   8.603x
+Zone 3                 | Linear median:    14.228 ms | DPS median:    12.845 ms | Speedup:   1.108x
+                       | Linear P95:    564.30 us | DPS P95:    573.90 us | Comparisons:   1.000x
+Zone 4                 | Linear median:    20.319 ms | DPS median:    18.799 ms | Speedup:   1.081x
+                       | Linear P95:    562.00 us | DPS P95:    677.50 us | Comparisons:   1.000x
+Uniform                | Linear median:    10.715 ms | DPS median:     9.502 ms | Speedup:   1.128x
+                       | Linear P95:    536.50 us | DPS P95:    498.40 us | Comparisons:   1.031x
+Mixed 70-10-10-10      | Linear median:    15.275 ms | DPS median:    13.106 ms | Speedup:   1.166x
+                       | Linear P95:    559.70 us | DPS P95:    514.30 us | Comparisons:   1.056x
+Not Found              | Linear median:    25.250 ms | DPS median:    23.338 ms | Speedup:   1.082x
+                       | Linear P95:    684.40 us | DPS P95:    627.20 us | Comparisons:   1.000x
+
+----------------------------------------------
+Training zone: 3
+Frozen order: [3, 1, 2, 4]
+Training time: 100.524 ms
+----------------------------------------------
+Zone 1                 | Linear median:     0.943 ms | DPS median:     6.659 ms | Speedup:   0.142x
+                       | Linear P95:     83.90 us | DPS P95:    227.30 us | Comparisons:   0.122x
+Zone 2                 | Linear median:     7.737 ms | DPS median:    13.121 ms | Speedup:   0.590x
+                       | Linear P95:    232.20 us | DPS P95:    452.60 us | Comparisons:   0.535x
+Zone 3                 | Linear median:    14.006 ms | DPS median:     0.950 ms | Speedup:  14.747x
+                       | Linear P95:    514.20 us | DPS P95:     67.00 us | Comparisons:  14.026x
+Zone 4                 | Linear median:    20.130 ms | DPS median:    18.716 ms | Speedup:   1.076x
+                       | Linear P95:    564.10 us | DPS P95:    791.00 us | Comparisons:   1.000x
+Uniform                | Linear median:    14.158 ms | DPS median:    11.104 ms | Speedup:   1.275x
+                       | Linear P95:    760.70 us | DPS P95:    714.50 us | Comparisons:   1.098x
+Mixed 70-10-10-10      | Linear median:    18.948 ms | DPS median:    17.066 ms | Speedup:   1.110x
+                       | Linear P95:    809.10 us | DPS P95:    546.00 us | Comparisons:   1.026x
+Not Found              | Linear median:    26.156 ms | DPS median:    24.130 ms | Speedup:   1.084x
+                       | Linear P95:    872.10 us | DPS P95:    797.20 us | Comparisons:   1.000x
+
+----------------------------------------------
+Training zone: 4
+Frozen order: [4, 1, 2, 3]
+Training time: 156.971 ms
+----------------------------------------------
+Zone 1                 | Linear median:     1.007 ms | DPS median:     6.905 ms | Speedup:   0.146x
+                       | Linear P95:     74.80 us | DPS P95:    265.50 us | Comparisons:   0.129x
+Zone 2                 | Linear median:     7.920 ms | DPS median:    13.668 ms | Speedup:   0.579x
+                       | Linear P95:    270.80 us | DPS P95:    519.70 us | Comparisons:   0.535x
+Zone 3                 | Linear median:    14.230 ms | DPS median:    18.960 ms | Speedup:   0.751x
+                       | Linear P95:    482.30 us | DPS P95:    637.40 us | Comparisons:   0.681x
+Zone 4                 | Linear median:    20.738 ms | DPS median:     0.950 ms | Speedup:  21.825x
+                       | Linear P95:    656.70 us | DPS P95:     80.60 us | Comparisons:  19.738x
+Uniform                | Linear median:    10.019 ms | DPS median:    11.071 ms | Speedup:   0.905x
+                       | Linear P95:    747.90 us | DPS P95:    883.30 us | Comparisons:   0.831x
+Mixed 70-10-10-10      | Linear median:    17.242 ms | DPS median:     4.613 ms | Speedup:   3.738x
+                       | Linear P95:    690.40 us | DPS P95:    471.10 us | Comparisons:   3.565x
+Not Found              | Linear median:    26.232 ms | DPS median:    23.952 ms | Speedup:   1.095x
+                       | Linear P95:    876.40 us | DPS P95:    707.80 us | Comparisons:   1.000x
+
+
+==============================================
+                 FINAL REPORT
+==============================================
+Total experiments: 112
+DPS27 wins: 84
+DPS27 losses: 28
+Ties: 0
+Mean speedup: 1.7840x
+Median speedup: 1.0762x
+Mean comparison ratio: 1.6410x
+
+IMPORTANT:
+DPS27 was frozen before every test scenario.
+Test queries never update its learned state.
+Both algorithms receive identical test queries.
+Training time is reported separately.
+Results apply only to these tested distributions.

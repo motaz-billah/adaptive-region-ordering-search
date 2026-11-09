@@ -1,0 +1,6 @@
+scenario,n,queries,repeats,linear_median_ms,adaptive_median_ms,linear_avg_comparisons,adaptive_avg_comparisons,timing_speedup_linear_over_adaptive,comparison_ratio_linear_over_adaptive
+zone_1,8000,400,5,16.593479,23.173114,991.49,991.49,0.7161,1.0
+zone_4,8000,400,5,127.838924,23.820529,7014.988,1029.987,5.3668,6.8108
+uniform,8000,400,5,70.923344,69.250301,3878.443,3978.443,1.0242,0.9749
+shift_zone_2_to_zone_4,8000,400,5,88.8705,25.957194,5008.31,1168.31,3.4237,4.2868
+misses,8000,400,5,147.902384,130.645296,8000.0,8000.0,1.1321,1.0

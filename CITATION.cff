@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use or discuss this research prototype, please cite the project and acknowledge its contributors."
+title: "Adaptive Region Ordering Search"
+version: 0.1.0
+date-released: 2026-11-09
+authors:
+  - family-names: "Abu Al-Joloud"
+    given-names: "Moataz Billah Jamal"
+  - family-names: "Abu Najm"
+    given-names: "Ali"
+  - family-names: "Radwan"
+    given-names: "Ahmad"
+type: software

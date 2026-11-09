@@ -1,0 +1,84 @@
+{
+  "project": "Adaptive Region Ordering Search",
+  "source_revision": "DPS28A (latest archived source located; 2026-10-31)",
+  "configuration": {
+    "n": 8000,
+    "queries": 400,
+    "repeats": 5,
+    "seed": 20261109,
+    "output": "results/benchmark_smoke_2026-11-09.csv"
+  },
+  "environment": {
+    "python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+    "processor": "not reported"
+  },
+  "methodology": "Same array and query sequence for both methods; query generation and correctness validation are outside the timed section; adaptive timing includes online learning and order selection; median of complete runs is reported.",
+  "results": [
+    {
+      "scenario": "zone_1",
+      "n": 8000,
+      "queries": 400,
+      "repeats": 5,
+      "linear_median_ms": 16.593479,
+      "adaptive_median_ms": 23.173114,
+      "linear_avg_comparisons": 991.49,
+      "adaptive_avg_comparisons": 991.49,
+      "timing_speedup_linear_over_adaptive": 0.7161,
+      "comparison_ratio_linear_over_adaptive": 1.0
+    },
+    {
+      "scenario": "zone_4",
+      "n": 8000,
+      "queries": 400,
+      "repeats": 5,
+      "linear_median_ms": 127.838924,
+      "adaptive_median_ms": 23.820529,
+      "linear_avg_comparisons": 7014.988,
+      "adaptive_avg_comparisons": 1029.987,
+      "timing_speedup_linear_over_adaptive": 5.3668,
+      "comparison_ratio_linear_over_adaptive": 6.8108
+    },
+    {
+      "scenario": "uniform",
+      "n": 8000,
+      "queries": 400,
+      "repeats": 5,
+      "linear_median_ms": 70.923344,
+      "adaptive_median_ms": 69.250301,
+      "linear_avg_comparisons": 3878.443,
+      "adaptive_avg_comparisons": 3978.443,
+      "timing_speedup_linear_over_adaptive": 1.0242,
+      "comparison_ratio_linear_over_adaptive": 0.9749
+    },
+    {
+      "scenario": "shift_zone_2_to_zone_4",
+      "n": 8000,
+      "queries": 400,
+      "repeats": 5,
+      "linear_median_ms": 88.8705,
+      "adaptive_median_ms": 25.957194,
+      "linear_avg_comparisons": 5008.31,
+      "adaptive_avg_comparisons": 1168.31,
+      "timing_speedup_linear_over_adaptive": 3.4237,
+      "comparison_ratio_linear_over_adaptive": 4.2868
+    },
+    {
+      "scenario": "misses",
+      "n": 8000,
+      "queries": 400,
+      "repeats": 5,
+      "linear_median_ms": 147.902384,
+      "adaptive_median_ms": 130.645296,
+      "linear_avg_comparisons": 8000.0,
+      "adaptive_avg_comparisons": 8000.0,
+      "timing_speedup_linear_over_adaptive": 1.1321,
+      "comparison_ratio_linear_over_adaptive": 1.0
+    }
+  ],
+  "limitations": [
+    "Single local environment and exploratory run; not publication-grade evidence.",
+    "Synthetic four-region workloads only.",
+    "Timing and comparison savings are workload-dependent."
+  ]
+}

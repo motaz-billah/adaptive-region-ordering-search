@@ -1,0 +1,5 @@
+Repository release: 0.1.0
+Project name: Adaptive Region Ordering Search
+Latest verifiable algorithm source: DPS28A (archived 2026-10-31)
+Release package date: 2026-11-09
+Note: No DPS29/DPS30 source file was present in the available project archive.

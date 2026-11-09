@@ -1,0 +1,83 @@
+{
+  "correctness": "PASS: exact search, misses, duplicates, probability normalization, valid order",
+  "configuration": {
+    "N": 30000,
+    "queries": 6000,
+    "seed": 28,
+    "regions": 4,
+    "lambda": 0.95,
+    "window": 128,
+    "alpha": 0.5,
+    "gamma": 0.5,
+    "beta": 0.25,
+    "note": "Demonstration only; not publication-grade evidence."
+  },
+  "results": [
+    {
+      "scenario": "stable_zone2",
+      "algorithm": "DPS27Hybrid",
+      "comparisons": 8368.726666666667,
+      "total_seconds": 2.707582369000022,
+      "median_us": 277.2869999887462,
+      "p95_us": 1403.1051499870275,
+      "successes": 6000,
+      "misses": 0,
+      "order_updates": 836
+    },
+    {
+      "scenario": "stable_zone2",
+      "algorithm": "DPS28A",
+      "comparisons": 8376.226666666667,
+      "total_seconds": 2.7394190109999954,
+      "median_us": 285.40400001020316,
+      "p95_us": 1405.8100000283957,
+      "successes": 6000,
+      "misses": 0,
+      "order_updates": 922
+    },
+    {
+      "scenario": "shift_zone2_to4",
+      "algorithm": "DPS27Hybrid",
+      "comparisons": 8199.976666666667,
+      "total_seconds": 2.645390338000027,
+      "median_us": 272.41899999808084,
+      "p95_us": 1365.077100038548,
+      "successes": 6000,
+      "misses": 0,
+      "order_updates": 784
+    },
+    {
+      "scenario": "shift_zone2_to4",
+      "algorithm": "DPS28A",
+      "comparisons": 8209.976666666667,
+      "total_seconds": 2.8036148460000163,
+      "median_us": 293.7155000211078,
+      "p95_us": 1443.0900999627738,
+      "successes": 6000,
+      "misses": 0,
+      "order_updates": 876
+    },
+    {
+      "scenario": "uniform",
+      "algorithm": "DPS27Hybrid",
+      "comparisons": 14898.726666666667,
+      "total_seconds": 4.786324566000019,
+      "median_us": 782.37099998546,
+      "p95_us": 1538.1465000075423,
+      "successes": 6000,
+      "misses": 0,
+      "order_updates": 2535
+    },
+    {
+      "scenario": "uniform",
+      "algorithm": "DPS28A",
+      "comparisons": 14987.476666666667,
+      "total_seconds": 4.9315332070000295,
+      "median_us": 808.9949999714463,
+      "p95_us": 1560.475500002667,
+      "successes": 6000,
+      "misses": 0,
+      "order_updates": 2624
+    }
+  ]
+}
